@@ -26,7 +26,7 @@ let fetch = require('./fetcher')
 		this.bodies = createInvaders(this).concat(new Player(this, gameSize))
 
 		var self = this
-		loadSound("shoot.wav", function(shootSound) {
+		loadSound("Sounds/laser.mp3", function(shootSound) {
 			self.shootSound = shootSound
 			var tick = function() {
 				self.update()
